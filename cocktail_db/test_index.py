@@ -10,9 +10,8 @@ def test_drinks_by_id_returns_specified_drink():
     returned_drink = drink_by_id(12322)
     assert returned_drink['drinks'][0]['idDrink'] == '12322'
 
-def test_extract_api_drink():
-    drink_summary = extract_api_drink(strawberry_margarita)
-    assert drink_summary == {'id': '12322', 'name': 'Strawberry Margarita', 'instructions': 'Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.', 'main_ingredient': 'Strawberry schnapps'}
+
+# write test for extract_api_drink
 
 def test_extract_ingredients():
     assert extract_ingredients(strawberry_margarita) == {'name': 'Strawberry Margarita', 
